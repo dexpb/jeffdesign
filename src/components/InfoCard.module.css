@@ -1,0 +1,227 @@
+.card {
+  width: 90rem;
+  height: 120vh;
+  margin-top: 33px;
+  margin-bottom: 40px;
+
+  border-radius: 20px;
+  background-color: #fff9f3;
+  -webkit-box-shadow: 2px 4px 26px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 26px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 26px -9px rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  gap: 50px;
+  text-transform: uppercase;
+
+  font-size: 54px;
+  width: 50%;
+  z-index: 2;
+}
+
+.leftSide h1 {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.leftSide h2{
+  transform: translateX(-200px);
+  opacity: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 90px;
+
+  margin-top: 70px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: white;
+  border-radius: 40px;
+  background-color: #ff8906;
+  border: 5px solid #fff9f3;
+  cursor: pointer;
+  transform: translateX(-700px);
+  opacity: 0;
+}
+
+.leftSide span {
+  background: #ff8906;
+  color: #fefefe;
+  animation: 5s text infinite linear;
+}
+
+.emojiExplode {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  z-index: -2;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 120vh;
+  margin-top: 50px;
+}
+
+.imageDiv {
+  position: absolute;
+  z-index: 5;
+}
+.imageDiv img {
+  width: 750px;
+  height: 50%;
+  z-index: 9;
+}
+.emojiLove {
+  position: absolute;
+  width: 55%;
+  height: 70%;
+  top: 300px;
+  z-index: 0;
+}
+.comments {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  bottom: 100px;
+  z-index: 3;
+}
+.cliente1 {
+  bottom: 300px;
+  position: relative;
+}
+.cliente2 {
+  bottom: 500px;
+  position: relative;
+}
+.cliente3 {
+  bottom: 250px;
+  right: 200px;
+  position: relative;
+}
+.cliente4 {
+  bottom: 320px;
+  right: 100px;
+  position: relative;
+}
+.comments img {
+  width: 20vw;
+  height: 20vh;
+}
+
+.subTitle{
+  display: none;
+}
+
+@keyframes text {
+  0% {
+    background: #ff8906;
+    color: #fefefe;
+  }
+
+  50% {
+    background: #fefefe;
+    color: #ff8906;
+  }
+
+  100% {
+    background: #ff8906;
+    color: #fefefe;
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .card {
+    display: inline-block;
+    width: 92%;
+    height: 25rem;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .content {
+    height: 30rem;
+  }
+  .subTitle{
+    font-size: 16px;
+    display: inline-block;
+  }
+  .leftSide {
+    font-size: 20px;
+    gap: 15px;
+    width: 25rem;
+    height: 45vh;
+  }
+
+  .emojiExplode {
+    display: none;
+  }
+  .emojiLove {
+    display: none;
+  }
+  .comments {
+    display: inline-block;
+    margin-left: 40px;
+    bottom: 3rem;
+
+    flex-direction: column;
+  }
+  .comments img {
+    width: 10rem;
+  }
+  .btn {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    width: 10rem;
+    height: 4rem;
+  }
+  .cliente1 {
+    position: relative;
+    top: 10px;
+    right: 0;
+  }
+  .cliente2 {
+    bottom: 10px;
+    right: 0;
+    position: relative;
+  }
+  .cliente3 {
+    top: 10px;
+    right: 0;
+    position: relative;
+  }
+  .cliente4 {
+    bottom: 10px;
+    right: 0;
+    position: relative;
+  }
+
+  .imageDiv {
+    display: none;
+  }
+}
+

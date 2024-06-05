@@ -1,0 +1,37 @@
+.title{
+    background-color: #FF8906;
+    display: flex;
+    height: 450px;
+    gap: 20px;
+
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 32px;
+    color: white;
+}
+
+.title img{
+    height: 450px;
+}
+
+.info{
+    margin-top: 20px;
+}
+
+.info span {
+    background-color: aliceblue;
+    color: #FF8906;
+}
+
+@media screen and (max-width: 430px){
+    .title{
+        font-size: 11px;
+        width: 100vw;
+        height: 30vh;
+    }
+    .title img{
+        height: 125px;
+    }
+}
+
