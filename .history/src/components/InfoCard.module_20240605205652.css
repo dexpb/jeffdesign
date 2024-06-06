@@ -151,7 +151,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 430px) {
   .card {
     display: inline-block;
     width: 92%;
